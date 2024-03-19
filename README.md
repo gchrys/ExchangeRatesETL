@@ -21,6 +21,14 @@ Example
 ```cli_command.php 2024-03-01 2024-03-31```
 
 
+**Chrontab**
+
+To run the script every day at 05:45
+
+```45 5 * * * /usr/bin/php /path/to/your/cli_command.php```
+
+Change the php path and the path to the project accordingly
+
 **Notes**
 
 The core of program, meaning the classes that handle the Extract, Transform and Load of the data are 3 abstract classes that are extended by specific ones. Those implement the code for extraction from the Open Exchange Rate API, the logic of transforming from USD base to EUR and finally loading the data in a PostgreSQL database.
