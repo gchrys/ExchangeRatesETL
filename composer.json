@@ -1,0 +1,18 @@
+{
+    "name": "gchrys/exchange-rates-etl",
+    "description": "Open Exchange Rates ETL",
+    "type": "project",
+    "require": {
+        "php": "^8.2",
+        "vlucas/phpdotenv": "^5.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.0",
+        "phpspec/prophecy": "^1.19"
+    }
+}
